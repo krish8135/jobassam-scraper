@@ -1,0 +1,33 @@
+name: JobAssam Scraper
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # har 2 ghante
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run Scraper
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scraper.py
+      
+      - name: Commit JSON
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add jobs.json
+          git commit -m "Auto update jobs - $(date)" || echo "No changes"
+          git push
