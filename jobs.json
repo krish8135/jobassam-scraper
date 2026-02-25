@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "title": "SSC CGL 2026",
+    "category": "Job",
+    "state": "All India",
+    "department": "SSC",
+    "postName": "Combined Graduate Level",
+    "totalPosts": "7500",
+    "lastDate": "30 Jun 2026",
+    "applyLink": "https://ssc.gov.in",
+    "notificationLink": "#",
+    "description": "SSC CGL 2026 notification"
+  },
+  {
+    "title": "RRB NTPC 2026",
+    "category": "Job",
+    "state": "All India",
+    "department": "Railway",
+    "postName": "NTPC",
+    "totalPosts": "22195",
+    "lastDate": "20 Jul 2026",
+    "applyLink": "https://rrbapply.gov.in",
+    "notificationLink": "#",
+    "description": "RRB NTPC 2026"
+  },
+  {
+    "title": "IBPS PO 2026",
+    "category": "Job",
+    "state": "All India",
+    "department": "IBPS",
+    "postName": "Probationary Officer",
+    "totalPosts": "4500",
+    "lastDate": "10 Aug 2026",
+    "applyLink": "https://ibps.in",
+    "notificationLink": "#",
+    "description": "IBPS PO CRP"
+  }
+]
